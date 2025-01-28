@@ -1,0 +1,5 @@
+<h1></h1>
+<input type="text" [(ngModel)]="newUserName">
+<h1></h1>
+<button (click)="addNewUser()">Add User</button>
+<h1 *ngFor="let user of users">{{user | exclamation}}</h1>

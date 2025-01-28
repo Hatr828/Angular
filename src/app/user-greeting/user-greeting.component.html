@@ -1,0 +1,9 @@
+<div *ngIf="isUserLoggedIn">
+  <h1>Hello, {{userName | exclamation}}</h1>
+  <button (click)="changeName()">Change Name</button>
+  <h1></h1>
+  <input type="text" [(ngModel)]="userName">
+</div>
+
+<h1></h1>
+<button (click)="login()">Login</button>
